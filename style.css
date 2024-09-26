@@ -2,7 +2,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* 很重要自己查 */
+    /* 很重要自己查 */jhh
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -29,7 +29,8 @@ body {
     /* 水平置中 */
     align-items: center;
     /* 垂直置中 */
-    justify-content: center;
+    background-color: #f0dede;
+    /* 更改為你想要的顏色 */
 }
 
 /* class選擇器, 選擇所有 class="wrapper" 的東西 */
@@ -50,21 +51,48 @@ body {
     /* 撐開內邊距 */
     padding: 3%;
     /* 陰影 */
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 1px 1px rgb(146, 143, 148);
     /* 外框 */
-    border: 1px solid #51515130;
+    border: 1.5px solid #aaa9a3;
     /* 變形, 幅度為 .3rem (圓角矩形) */
     border-radius: .3rem;
     /* 過度動畫長度指定半秒鐘 */
     transition: all .5s;
 }
 
+/* 第一個按鈕樣式 */
+.wrapper .btn-first {
+    background-color: #b6e4f2;
+    color: #1a9adf;
+}
+
+/* 第二個按鈕樣式 */
+.wrapper .btn-second {
+    background-color: #b9caf9;
+    color: #3771be;
+}
+
+/* 第三個按鈕樣式 */
+.wrapper .btn-third {
+    background-color: #bdaceb;
+    color: #65119d;
+}
+
+/* 第四個按鈕樣式 */
+.wrapper .btn-fourth {
+    background-color: #ecc3fa;
+    color: #a40fb1;
+}
+
+
 /* 冒號的意思是選擇虛擬類別 */
 /* id選擇器, 選擇所有 id="wrapper"的東西裡面 class="btn" 的東西*/
 /* 虛擬類別選擇器, 這裡選擇這東西被滑鼠懸停時的狀態 */
 .wrapper .btn:hover {
     /* 外框 */
-    border: 1px solid #51515150;
+    border: 3px solid #797b79;
     /* 陰影 */
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.326);
+    opacity: 0.8;
+    /* 懸停時稍微透明 */
 }
